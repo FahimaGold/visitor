@@ -3,13 +3,12 @@ public class Book {
     private String isbn;
     private double price;
     private double tax;
-    private boolean discount;
 
-    public Book(String isbn, double price, double tax, boolean discount) {
+
+    public Book(String isbn, double price, double tax) {
         this.isbn = isbn;
         this.price = price;
         this.tax = tax;
-        this.discount = discount;
     }
 
     public String getIsbn() {
@@ -24,7 +23,4 @@ public class Book {
         return tax;
     }
 
-    public boolean isDiscount() {
-        return discount;
-    }
 }

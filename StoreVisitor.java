@@ -4,8 +4,6 @@ public class StoreVisitor{
 
     public double calculateBookCost(Book book){
         double cost = book.getPrice() + book.getTax()*book.getPrice();
-        if(book.isDiscount())
-            cost = cost - cost*0.01;
         return cost;
     }
 
